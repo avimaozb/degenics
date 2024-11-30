@@ -23,16 +23,24 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.navbar .logo {
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.site-title {
     font-size: 1.5em;
     margin: 0;
-    display: inline-block;
-}
-
-.navbar nav {
-    float: right;
 }
 
 .navbar nav a {
@@ -64,33 +72,41 @@ body {
     margin-bottom: 30px;
 }
 
-.hero .buttons .btn {
-    padding: 10px 20px;
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 15px 30px;
     font-size: 1em;
-    margin: 10px;
-    border: none;
+    font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-.hero .btn-primary {
+.button-primary {
     background: #fff;
     color: #1e90ff;
+    border: 2px solid #1e90ff;
 }
 
-.hero .btn-primary:hover {
-    background: #f4f4f4;
-}
-
-.hero .btn-secondary {
-    background: #ff8c00;
+.button-primary:hover {
+    background: #1e90ff;
     color: #fff;
 }
 
-.hero .btn-secondary:hover {
+.button-secondary {
+    background: #ff8c00;
+    color: #fff;
+    border: 2px solid #ff8c00;
+}
+
+.button-secondary:hover {
     background: #ffa733;
+    color: #fff;
 }
 
 /* Features Section */
@@ -144,4 +160,3 @@ footer .social-links a {
 footer .social-links a:hover {
     text-decoration: underline;
 }
-
